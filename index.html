@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/styles/customstyle.css" />
+  </head>
+  <body>
+    <!-- ------ Header Section ----- -->
+
+    <header
+      class="w-100 d-flex align-items-center gap-2 justify-content-between"
+    >
+      <!-- Left Side -->
+      <div class="left d-flex gap-2 align-items-center w-50">
+        <!-- Logo Section -->
+        <div class="logo d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center gap-2">
+            <img src="./assets/img/logo2.png" alt="" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger d-flex flex-column gap-2">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="searchBar mx-4 position-relative">
+          <input
+            type="text"
+            class="form-control"
+            id="searchInput"
+            placeholder="Search"
+          />
+          <div class="searchIcon position-absolute">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div
+        class="right px-1 w-50 d-flex justify-content-end gap-4 align-items-center border-1 border-primary"
+      >
+        <!-- Notification -->
+        <div class="notification position-relative">
+          <div class="notificationIcon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="blue"
+              class="bi bi-bell-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+              />
+            </svg>
+          </div>
+          <div class="notificationNumber">4</div>
+        </div>
+
+        <!-- Message -->
+        <div class="message position-relative">
+          <div class="messageIcon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="blue"
+              class="bi bi-chat-left-text"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </div>
+          <div class="notificationNumber">3</div>
+        </div>
+
+        <!-- Profile -->
+        <div
+          class="profile d-flex justify-content-center align-items-center gap-2"
+        >
+          <div class="avatar">
+            <img src="./assets/img/logo.png" alt="logo here" />
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn dropdownBtn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Santosh Phaiju
+            </button>
+            <ul class="dropdown-menu mt-2 w-auto">
+              <div class="">
+                <span class="">Santosh Phaiju</span>
+                <span>Full Stack Developer</span>
+              </div>
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Account Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Need help?</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
