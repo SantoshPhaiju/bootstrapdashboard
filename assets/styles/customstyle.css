@@ -1,3 +1,8 @@
+/* * Common Codes */
+:root {
+  --common-padding: 18px;
+}
+
 body {
   background-color: #f6f9ff;
 }
@@ -6,7 +11,10 @@ body {
 header {
   background-color: white;
   box-shadow: 2px 4px 12px 0px rgba(80, 80, 80, 0.1);
-  padding: 16px 20px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
   /* border: 1px solid black; */
 }
 
@@ -37,7 +45,7 @@ header .left > .logo {
 }
 
 .searchBar {
-  width: 30%;
+  width: 280px;
 }
 
 .searchBar > #searchInput {
@@ -70,13 +78,28 @@ header .left > .logo {
   right: 12px;
 }
 
-.notificationNumber {
+.notificationNumber1 {
+  position: absolute;
+  top: -8px;
+  right: -11px;
+  background-color: rgb(122, 85, 234);
+  color: white;
+  border-radius: 30%;
+  height: 20px;
+  font-size: 12px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificationNumber2 {
   position: absolute;
   top: -8px;
   right: -12px;
-  background-color: rgb(122, 85, 234);
+  background-color: rgb(234, 85, 85);
   color: white;
-  border-radius: 50%;
+  border-radius: 30%;
   height: 20px;
   font-size: 12px;
   width: 20px;
@@ -160,4 +183,45 @@ header .left > .logo {
 .dropdownBtn:focus {
   border: none;
   outline: none;
+}
+
+/* * Aside code starts here */
+aside {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 22%;
+  height: 100vh;
+  background: blue;
+  background: #fff;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  padding: var(--common-padding);
+}
+
+/* * Main section code starts here */
+main {
+  position: absolute;
+  top: 60px;
+  left: 320px;
+  width: 77.5%;
+  height: auto;
+  padding: var(--common-padding);
+  /* border: 1px solid black; */
+}
+
+.breadcrumbHeading {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  gap: 2px;
+}
+
+.breadcrumbHeading h3 {
+  /* line-height: 20px; */
+  margin: 0px;
+}
+.breadcrumbHeading p {
+  /* line-height: 20px; */
+  margin: 0px;
 }
