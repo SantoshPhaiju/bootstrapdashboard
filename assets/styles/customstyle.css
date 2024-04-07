@@ -5,6 +5,7 @@
 
 body {
   background-color: #f6f9ff;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Header Section Css */
@@ -190,12 +191,59 @@ aside {
   position: fixed;
   top: 60px;
   left: 0px;
-  width: 22%;
+  width: 320px;
   height: 100vh;
   background: blue;
   background: #fff;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
   padding: var(--common-padding);
+}
+
+nav {
+  /* border: 1px solid black; */
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px 22px;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #f6f1ff;
+  transition: all 0.5s ease;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  /* color: black; */
+  color: #154aad;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+nav p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 14px;
+}
+
+nav ul li a img {
+  width: 16px;
+  height: 16px;
 }
 
 /* * Main section code starts here */
