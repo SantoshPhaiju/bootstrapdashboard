@@ -132,11 +132,12 @@ header .left > .logo {
   justify-content: center;
   align-items: center;
   background-color: rgba(189, 37, 37, 0.249);
+  overflow: hidden;
 }
 
 .avatar > img {
-  height: 60%;
-  width: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .dropdown-menu {
@@ -199,10 +200,6 @@ aside {
   padding: var(--common-padding);
 }
 
-nav {
-  /* border: 1px solid black; */
-}
-
 nav ul {
   margin: 0px;
   padding: 0px;
@@ -217,6 +214,10 @@ nav ul li {
   /* border: 1px solid black; */
   border-radius: 8px;
   font-weight: 500;
+}
+
+nav ul li:first-child {
+  background-color: #f6f1ff;
 }
 
 nav ul li:hover {
@@ -248,9 +249,9 @@ nav ul li a img {
 
 /* * Main section code starts here */
 main {
-  position: absolute;
-  top: 60px;
-  left: 320px;
+  min-height: 85vh;
+  margin-top: 60px;
+  margin-left: 320px;
   width: 77.5%;
   height: auto;
   padding: var(--common-padding);
@@ -268,8 +269,52 @@ main {
 .breadcrumbHeading h3 {
   /* line-height: 20px; */
   margin: 0px;
+  color: rgb(37, 37, 113);
 }
-.breadcrumbHeading p {
+.breadcrumbHeading div {
   /* line-height: 20px; */
   margin: 0px;
+  display: flex;
+  gap: 4px;
+}
+
+.breadcrumbHeading div p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(176, 176, 236);
+}
+.breadcrumbHeading div p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(108, 108, 174);
+}
+
+/* * Footer code starts here * */
+
+footer {
+  margin-left: 320px;
+  width: auto;
+  height: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(191, 152, 213, 0.511);
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 12px;
+  color: rgb(82, 82, 159);
+  text-transform: capitalize;
+}
+
+footer p span {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(255, 0, 183);
 }
